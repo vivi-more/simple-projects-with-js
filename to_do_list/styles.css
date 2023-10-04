@@ -161,6 +161,8 @@ label {
     width: 95%;
     display: inline-block;
     cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .display-none {
