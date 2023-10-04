@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>To-Do List</title>
+</head>
+
+<body>
+    <div class="list">
+        <header>
+            TO-DO LIST
+        </header>
+        <main>
+            <div class="insert-item">
+                <input type="text" placeholder="Add something to do..." id="add-item-input">
+                <button title="Add New Item" id="add-item-button">+</button>
+            </div>
+
+            <div class="title">TO DO</div>
+
+            <div class="items-unchecked">
+                <ul class="list-items" id="unchecked-list"> </ul>
+            </div>
+
+            <div class="title">DONE</div>
+
+            <div class="items-checked">
+                <ul class="list-items" id="checked-list"> </ul>
+            </div>
+
+
+        </main>
+        <footer>
+            <p>&copy; vivi-mores</p>
+        </footer>
+
+        <div class="none">
+            <div class="alerts display-none">
+                <div class="text-empty display-none">Text cannot be empty!</div>
+                <div class="text-exist display-none">Task alread exist!</div>
+            </div>
+
+            <div class="display-none">
+                <li id="li-exemple" key="0">
+                    <div class="li-normal">
+                        <input type="checkbox">
+                        <label>Exemple</label>
+                    </div>
+                    <div class="li-on-changing display-none">
+                        <input type="text" value="Exemple">
+                        <button name="change">Change</button>
+                        <button name="cancel">Cancel</button>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
