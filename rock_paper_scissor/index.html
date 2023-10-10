@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Rock-Paper-Scissor</title>
+</head>
+
+<body>
+    <header>
+        Rock-Paper-Scissor
+    </header>
+    <main>
+        <section class="choose-container">
+            <div class="choice" title="fist icons" id="rock-choice"><img src="./images/fist.png" alt="fist icons" title="rock-choice"></div>
+            <div class="choice" title="palm icons" id="paper-choice"><img src="./images/palm.png" alt="palm icons" title="paper-choice">
+            </div>
+            <div class="choice" title="victory icons" id="scissor-choice"><img src="./images/letter_v.png"
+                    alt="victory icons" title="scissor-choice"></div>
+        </section>
+        <section class="button-container">
+            <button>Play</button>
+        </section>
+
+        <section class="choose-container">
+            <div class="choice" title="fist icons"><img src="./images/fist.png" alt="fist icons" id="chosen"  title="rock-choice"></div>
+            <div class="rotate-container">
+                <div class="rotate">
+                    <div class="choice rotate-front">
+                        ?
+                    </div>
+                    <div class="choice rotate-back"> </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="result">
+           <div class="won display-none">YOU WON!</div>
+           <div class="lose display-none">YOU LOSE!</div>
+           <div class="tied display-none">YOU TIED!</div>
+        </section>
+    </main>
+    <footer>
+        <section class="copy">
+            &copy; vivi-mores <br /><br />
+        </section>
+        <section class="credits">
+            Icons credits:
+            <a href="https://www.flaticon.com/free-icons/fist" title="fist icons">Fist icons created by Freepik -
+                Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/palm" title="palm icons">Palm icons created by Freepik -
+                Flaticon</a>
+            <a href="https://www.flaticon.com/free-icons/victory" title="victory icons">Victory icons created by Vitaly
+                Gorbachev - Flaticon</a>
+        </section>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
