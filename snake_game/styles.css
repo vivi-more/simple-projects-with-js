@@ -1,0 +1,123 @@
+body {
+    text-align: justify;
+    letter-spacing: 0.15em;
+    font-family: Georgia, serif;
+    position: absolute;
+    width: 98vw;
+    height: 95.5vh;
+    margin: 0;
+    background-color: black;
+    color: white;
+    border: 1vw solid white;
+}
+
+header,
+main {
+    position: absolute;
+}
+
+header,
+footer,
+.controls,
+.game-over, 
+.paused {
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    font-size: 2em;
+    text-decoration: underline;
+    margin: 1em 0 1em 0;
+    z-index: 10;
+}
+
+main {
+    height: 100%;
+    margin: 0 0.5em 0 0.5em;
+    width: -webkit-fill-available;
+}
+
+.snake-container {
+    height: 70%;
+}
+
+.snake {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body {
+    width: 20px;
+    height: 20px;
+    background-color: #34DF00;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.ball {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.head {
+    background-color: darkgreen;
+    z-index: 1;
+}
+
+.game-over, .paused {
+    position: fixed;
+    top: 50%;
+    color: #34DF00;
+}
+
+.display-none {
+    display: none;
+}
+
+.rate {
+    text-align: center;
+    z-index: 10;
+    color: #34DF00;
+}
+
+.controls-container {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    flex: 1 0 25%;
+    margin: 0.1rem;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    z-index: 10;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    z-index: 10;
+}
+
+footer {
+    position: absolute;
+    opacity: 0.8;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    z-index: 10;
+}
