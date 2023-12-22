@@ -13,7 +13,6 @@ body {
 
 .list {
     border: 0.3em solid #3D2B47;
-    background-color: #D3EAFF;
     width: 65vw;
     min-height: 100vh;
     position: relative;
@@ -42,7 +41,6 @@ input[type="text"] {
     border-left: none;
     border-right: none;
     border-bottom: 2px solid;
-    background-color: #D3EAFF;
 
 }
 

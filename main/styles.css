@@ -1,0 +1,65 @@
+html{
+    background: url(images/wallpaper.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body {
+    text-align: justify;
+    letter-spacing: 0.15em;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+header,
+footer,
+main{
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 10;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div{
+    flex: 1 0 25%;
+    margin-bottom: 10px;
+}
+img{
+    border-radius: 10px;
+    border: 1px solid black;
+    opacity: 80%;
+}
+
+img:hover{
+    border: 1px solid cornflowerblue;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    opacity: 100%;
+}
+
+main{
+    height: -webkit-fill-available;
+}
+
+header {
+    font-size: 2em;
+    text-decoration: underline;
+    margin: 1em 0 1em 0;
+}
+
+footer {
+    bottom: 0;
+    top: -5;
+    padding: 10px;
+    margin: 0.2em 0 0 0;
+}

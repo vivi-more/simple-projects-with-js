@@ -2,8 +2,7 @@ body {
     text-align: justify;
     letter-spacing: 0.15em;
     font-family: Georgia, serif;
-    background-color: #EADBC8;
-    color: #102C57;
+    color: #442e22;
 }
 
 main,
@@ -48,8 +47,8 @@ textarea {
 }
 
 textarea {
-    border: 2px solid #102C57;
-    background-color: #F8F0E5;
+    border: 2px solid #442e22;
+    background-color: #e9e4e4;
     resize: none;
     font-size: 1.5vw;
     padding: 1vw;
@@ -58,6 +57,7 @@ textarea {
 ::-webkit-scrollbar, textarea::-webkit-scrollbar {
     display: block;
     width: 5px;
+    cursor: pointer;
 }
 
 ::-webkit-scrollbar{
@@ -65,7 +65,7 @@ textarea {
 }
 
 ::-webkit-scrollbar-track{
-    background-color: #F8F0E5;
+    background-color: #825840;
 }
 
 textarea::-webkit-scrollbar-track {
@@ -73,7 +73,7 @@ textarea::-webkit-scrollbar-track {
 }
     
 ::-webkit-scrollbar-thumb, textarea::-webkit-scrollbar-thumb {
-    background-color: #102C57;
+    background-color: #442e22;
     border-right: none;
     border-left: none;
 }
@@ -97,16 +97,16 @@ button {
     border-radius: 100%;
     width: 5vw;
     height: 5vw;
-    border: 2px solid #102C57;
-    color: #102C57;
+    border: 2px solid #442e22;
+    color: #442e22;
     font-size: 3vw;
-    background-color: #F8F0E5;
+    background-color: #e9e4e4;
     cursor: pointer;
 }
 
 button:hover {
-    border: 2px solid #DAC0A3;
-    color: #DAC0A3;
+    border: 2px solid #825840;
+    color: #825840;
 }
 
 footer {
@@ -117,6 +117,6 @@ footer {
 }
 
 .observation{
-    color: red;
+    color: #442e22;
     margin-bottom: 3rem;
 }

@@ -11,10 +11,12 @@ addNoteButton.addEventListener("click", createNote.bind(null, ""));
 function fullNotes() {
     listLocalStorage = JSON.parse(localStorage.getItem("listLocalStorage"));
 
-    listLocalStorage.forEach(text => {
-        createNote(text);
-    });
-
+    if(listLocalStorage !== null){
+        listLocalStorage.forEach(text => {
+            createNote(text);
+        });
+    
+    }
 }
 
 function createNote(text) {
@@ -24,6 +26,7 @@ function createNote(text) {
     const newTextArea = document.createElement("textarea");
 
     newTextArea.setAttribute("name", "comment");
+    newTextArea.setAttribute("placeholder", "Write your note here!");
     newTextArea.addEventListener("change", changeTextAreaText.bind(newTextArea, countList));
     newTextArea.value = text;
 
